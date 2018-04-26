@@ -7,6 +7,6 @@ RUN dotnet restore
 
 # copy and build everything else
 COPY . ./
-EXPOSE 8080
+EXPOSE 3000
 RUN dotnet publish -c Release -o out
 ENTRYPOINT ["dotnet", "out/dotnet-helloworld.dll"]

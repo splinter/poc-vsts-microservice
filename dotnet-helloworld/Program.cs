@@ -15,7 +15,7 @@ namespace dotnet_helloworld
             var webHost = new WebHostBuilder()
             .UseKestrel()
             .UseStartup<Program>()
-            .UseUrls("http://0.0.0.0:8080")
+            .UseUrls("http://0.0.0.0:3000")
             .Build();
             webHost.Run();
         }
